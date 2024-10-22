@@ -5,13 +5,13 @@ stations = ['Station A', 'Station B', 'Station C', 'Station D', 'Station E']
 G.add_nodes_from(stations)
 
 edges = [
-    ('Station A', 'Station B', 1.5),
-    ('Station B', 'Station C', 2.1),
-    ('Station C', 'Station D', 1.7),
-    ('Station D', 'Station E', 2.2),
-    ('Station A', 'Station C', 2.5)
+    ('Station A', 'Station B'),
+    ('Station B', 'Station C'),
+    ('Station C', 'Station D'),
+    ('Station D', 'Station E'),
+    ('Station A', 'Station C')
 ]
-G.add_weighted_edges_from(edges)
+G.add_edges_from(edges)
 
 
 def dfs_path(graph, start, goal):
